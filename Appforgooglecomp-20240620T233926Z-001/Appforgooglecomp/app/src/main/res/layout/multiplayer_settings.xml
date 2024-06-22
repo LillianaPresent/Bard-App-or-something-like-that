@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:backgroundTint="#6AE1B33D"
+        android:minWidth="36dp"
+        android:minHeight="920dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="360dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="61dp"
+            android:fontFamily="sans-serif"
+            android:text="Multiplayer"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Join Code:"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="109dp"
+            android:layout_height="21dp"
+            android:text="Available Games"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="301dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="268dp"
+            android:layout_height="215dp"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:itemCount="10"
+            tools:layout_editor_absoluteY="338dp"
+            tools:listitem="game" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="194dp"
+            android:layout_height="58dp"
+            android:backgroundTint="#E44242"
+            android:text="Join Random Game"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="218dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
